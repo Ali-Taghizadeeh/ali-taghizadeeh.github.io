@@ -129,21 +129,31 @@ header {
 /* header2 */
 .container_2 {
     background-color: transparent;
-    width: 100%;
-    height: 105vh;
+    /* width: 100%; */
+    min-height: 105vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    place-self: center;
     gap: 15px;
+}
+
+@media (max-width: 800px) {
+    .container_2 {
+        flex-direction: column;
+        height: 105vh;
+        /* gap: 0.125rem; */
+    }
+    
 }
 
 .profile {
     background-color: transparent;
-    width: 50%;
-    height: 60vh;
-    display: flex;
+    /* width: 50%; */
+    /* height: 60vh; */
+    /* display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: center; */
 }
 
 .profile_pic {
@@ -151,7 +161,7 @@ header {
     height: 350px;
     border-radius: 50%;
     background-color: #fff;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     border: 5px solid #b2d5e5;
     box-shadow: 0px 0px 5px blue;
     background-image: url(./pic/profile.jpg);
@@ -161,12 +171,12 @@ header {
 
 .about {
     background-color: transparent;
-    width: 50%;
-    height: 60vh;
+    /* width: 50%; */
+    /* height: 60vh; */
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 14px;
+    /* gap: 14px; */
 }
 
 .about_item {
